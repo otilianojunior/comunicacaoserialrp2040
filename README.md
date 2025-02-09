@@ -74,7 +74,6 @@ ComunicacaoSerialRP2040/
 ├── .gitignore
 ├── CMakeLists.txt
 ├── LICENSE
-├── pico_sdk_import.cmake
 └── README.md
 
 ```
