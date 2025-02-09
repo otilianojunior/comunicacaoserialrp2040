@@ -100,6 +100,37 @@ ComunicacaoSerialRP2040/
 
 ---
 
+## 🔠 Caracteres Especiais na Fonte e Comandos do Terminal
+
+A biblioteca de fonte utilizada neste projeto, definida em **font.h**, foi personalizada para incluir não apenas letras e dígitos, mas também um conjunto de caracteres especiais que enriquecem a exibição de mensagens no display SSD1306. Cada caractere é representado por um glifo 8×8 (8 bytes). Confira abaixo alguns dos caracteres especiais e seus índices no array de fonte:
+
+- **'!'** – Glifo definido no índice **[63]**
+- **'\\'** (barra invertida) – Índice **[64]**
+- **'#'** – Índice **[65]**
+- **'$'** – Índice **[66]**
+- **'%'** – Índice **[67]**
+- **'&'** – Índice **[68]**
+- **'''** (aspas simples) – Índice **[69]**
+- **'('** – Índice **[70]**
+- **')'** – Índice **[71]**
+- **'*'** – Índice **[72]**
+- **'+'** – Índice **[73]**
+- **','** – Índice **[74]**
+- **'-'** – Índice **[75]**
+- **'.'** – Índice **[76]**
+- **'/'** – Índice **[77]**
+
+Além dos glifos presentes na fonte, o terminal do projeto implementa funcionalidades de controle para facilitar a entrada de texto:
+
+- **Backspace:**  
+  Ao pressionar a tecla Backspace (ASCII 8 ou 127), o terminal apaga o último caractere digitado, permitindo correções durante a inserção de dados.
+
+- **Enter:**  
+  Quando o usuário pressiona Enter (newline ou carriage return), o terminal avança para a próxima linha, possibilitando a criação de múltiplas linhas de texto.
+
+
+---
+
 ## 🔧 Requisitos Técnicos
 
 - **Interrupções (IRQ):** Os botões utilizam interrupções para garantir respostas rápidas.
