@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = '../build/comunicacaoserialrp2040.uf2'
+elf = '../comunicacaoserialrp2040.elf'
